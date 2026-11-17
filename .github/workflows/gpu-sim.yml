@@ -6,6 +6,8 @@ name: GPU Simulator
 # host-device error, and this job fails if that error is missing or too large.
 
 on:
+  push:
+    branches: [ verify-gpu-sim ]
   workflow_dispatch:
   pull_request:
     branches: [ main ]
